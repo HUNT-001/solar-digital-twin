@@ -1,4 +1,4 @@
-# ?? Yulara Solar Digital Twin
+# ‚òÄÔ∏è Yulara Solar Digital Twin
 
 [![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)](https://python.org)
 [![Flask](https://img.shields.io/badge/Flask-REST%20API-lightgrey?logo=flask)](https://flask.palletsprojects.com)
@@ -22,7 +22,7 @@ The platform demonstrates how **AI + cloud infrastructure can optimize renewable
 
 ---
 
-# ?? Live Deployment
+# üöÄ Live Deployment
 
 | Service | URL |
 |------|------|
@@ -31,28 +31,25 @@ The platform demonstrates how **AI + cloud infrastructure can optimize renewable
 
 ---
 
-# ??? System Architecture
+# ‚öôÔ∏è System Architecture
 
 The platform follows a **data ? ML ? API ? visualization pipeline**.
 DATA INGESTION
 (AEMO NEM CSV + Solar Farm + Weather Data)
-¶
-?
+¬¶
 DATA PIPELINE
 preprocess.py
 feature engineering
 yulara_master.csv
-¶
-?
+¬¶
 ML TRAINING
 train_models.py
 
-ï Prophet ? Solar power forecasting
-ï XGBoost ? Electricity price prediction
-ï Isolation Forest ? Anomaly detection
-¶
-?
-BACKEND ó Flask REST API (AWS Elastic Beanstalk)
+‚Ä¢ Prophet ? Solar power forecasting
+‚Ä¢ XGBoost ? Electricity price prediction
+‚Ä¢ Isolation Forest ? Anomaly detection
+¬¶
+BACKEND ‚Äî Flask REST API (AWS Elastic Beanstalk)
 
 GET /api/stats
 GET /api/alerts
@@ -62,18 +59,17 @@ POST /api/anomalies
 POST /api/historical
 POST /api/simulation/3d
 POST /api/predict/revenue
-¶
-?
-FRONTEND ó React Dashboard (Netlify)
+¬¶
+FRONTEND ‚Äî React Dashboard (Netlify)
 
-ï Power Forecast Dashboard
-ï Price Forecast Dashboard
-ï Anomaly Detection Panel
-ï 3D Solar Farm Simulation
-ï Revenue Prediction Tool
+‚Ä¢ Power Forecast Dashboard
+‚Ä¢ Price Forecast Dashboard
+‚Ä¢ Anomaly Detection Panel
+‚Ä¢ 3D Solar Farm Simulation
+‚Ä¢ Revenue Prediction Tool
 ---
 
-# ?? Repository Structure
+# ‚öôÔ∏è Repository Structure
 
 
 solar-digital-twin/
@@ -123,17 +119,17 @@ package.json
 
 ---
 
-# ?? Machine Learning Model Performance
+# üìà Machine Learning Model Performance
 
-| Model | Task | R≤ Score | Accuracy | MAE |
+| Model | Task | R¬≤ Score | Accuracy | MAE |
 |------|------|------|------|------|
-| Prophet | Solar Power Forecast | 0.9905 | 99.05% | 24.33 kW |
+| Prophet | Solar Power Forecast | 0.9805 | 98.05% | 24.33 kW |
 | XGBoost | Electricity Price Prediction | 0.8986 | 89.86% | 14.73 $/MWh |
 | Isolation Forest | Anomaly Detection | 0.97 | 97% | ~3% anomaly rate |
 
 ---
 
-# ?? Local Setup
+# üíª Local Setup
 
 ## Prerequisites
 
@@ -186,12 +182,12 @@ http://localhost:3000
 
 ---
 
-# ?? API Reference
+# üåê API Reference
 
 | Method | Endpoint | Description | Example Payload |
 |------|------|------|------|
-| GET | /api/stats | Solar farm statistics | ó |
-| GET | /api/alerts | Active anomaly alerts | ó |
+| GET | /api/stats | Solar farm statistics | ‚Äî |
+| GET | /api/alerts | Active anomaly alerts | ‚Äî |
 | POST | /api/forecast/prophet | Solar power forecast | { "hours": 24 } |
 | POST | /api/forecast/price | Electricity price forecast | { "hours": 24 } |
 | POST | /api/anomalies | Retrieve anomaly records | { "n_records": 100 } |
@@ -201,16 +197,16 @@ http://localhost:3000
 
 ---
 
-# ?? Cloud Deployment
+# üöÄ Cloud Deployment
 
-## Backend ó AWS Elastic Beanstalk
+## Backend ‚Äî AWS Elastic Beanstalk
 
 
 zip -r yulara-deploy.zip app.py requirements.txt models/
 eb deploy
 ---
 
-## Frontend ó Netlify
+## Frontend ‚Äî Netlify
 
 
 cd yulara-frontend
@@ -221,7 +217,7 @@ Upload the **build/** folder to Netlify.
 
 ---
 
-# ?? Dataset Sources
+# üìÅ Dataset Sources
 
 | Dataset | Source | Description |
 |------|------|------|
@@ -233,7 +229,7 @@ Raw datasets are not included due to size (~400MB).
 
 ---
 
-# ?? Technology Stack
+# üõ†Ô∏è Technology Stack
 
 | Layer | Technology |
 |------|------|
@@ -248,7 +244,7 @@ Raw datasets are not included due to size (~400MB).
 
 ---
 
-# ?? Project Context
+# üìñ Project Context
 
 This project demonstrates a **cloud-based digital twin architecture for renewable energy infrastructure**, integrating:
 
